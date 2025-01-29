@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Say Hello
-        run: echo "Running tests for deployment"
+        run: echo "Hiyaaaa"
 
   test:
     name: Test
