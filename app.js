@@ -18,7 +18,7 @@ const {
 
 const endpoints = require("./endpoints.json");
 
-app.use(cors);
+app.use(cors());
 app.use(express.json());
 
 app.get("/api", (request, response) => {
