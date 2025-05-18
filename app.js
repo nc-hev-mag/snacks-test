@@ -14,7 +14,9 @@ const {
 	customErrorHandler,
 	serverErrorHandler,
 } = require("./errors");
+
 const endpoints = require("./endpoints.json");
+
 app.use(express.json());
 
 app.get("/api", (request, response) => {
