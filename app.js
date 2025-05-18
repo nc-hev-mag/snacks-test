@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
 const {
 	getSnacks,
 	getSnackBySnackId,
@@ -17,6 +18,7 @@ const {
 
 const endpoints = require("./endpoints.json");
 
+app.use(cors);
 app.use(express.json());
 
 app.get("/api", (request, response) => {
